@@ -132,6 +132,7 @@ img {
     background-color: rgb(11, 135, 207);
     color: white;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .notification {
@@ -248,7 +249,9 @@ img {
     display: flex;
     align-self: flex-end;
     padding-right: 50px;
+    padding-bottom: 20px;
     margin-top: -20px;
+    gap: 20px;
 }
 
 .show,
@@ -290,7 +293,7 @@ img {
 .announcements {
     display: grid;
     padding: 20px;
-    gap: 20px;
+    gap: 25px;
     margin-top: 15px;
 }
 
@@ -305,6 +308,7 @@ img {
 .trending-content-card {
     display: flex;
     justify-content: space-evenly;
+    padding-left: 10px;
 }
 
 .trending-information {
@@ -316,7 +320,7 @@ img {
 .trending-logo img {
     height: 50px;
     width: 55px;
-    padding: 0;
+    padding: 0px;
     border-radius: 100%;
 }
 
@@ -324,7 +328,18 @@ img {
     font-size: 14px;
 }
 
-@media (max-width: 1100px) {
+.popup {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
     .main-content {
         grid-template-columns: 1fr;
     }
