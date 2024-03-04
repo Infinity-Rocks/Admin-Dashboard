@@ -47,7 +47,7 @@ for (let i = 0; i < showBtns.length; i++) {
 
     starBtns[i].addEventListener("click", () => {
         let imgSrc = starBtns[i].children[0].src;
-        let fileName = imgSrc.slice(29);
+        let fileName = imgSrc.slice(-8);
         console.log(fileName);
         if (fileName == "Star.svg") {
             console.log("1");
@@ -55,7 +55,7 @@ for (let i = 0; i < showBtns.length; i++) {
         }
         else {
             console.log("2");
-            starBtns[i].children[0].src = "assets/Star.svg";
+            starBtns[i].children[0].src = "./assets/Star.svg";
         }
     });
 
