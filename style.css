@@ -80,6 +80,12 @@ body {
     font-size: 16px;
     cursor: pointer;
     display: inline-block;
+    transition-duration: 1.8s;
+    transition-property: transform;
+}
+
+.btn:hover {
+    transform: scale(1.4);
 }
 
 .main-content {
@@ -133,6 +139,12 @@ img {
     color: white;
     margin-left: 10px;
     cursor: pointer;
+    transition-duration: 2.2s;
+    transition-property: transform;
+}
+
+.personalbar-btns button:hover {
+    transform: rotateY(360deg);
 }
 
 .notification {
@@ -144,6 +156,12 @@ img {
     padding-right: 50px;
     width: 50px;
     justify-self: end;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+.notification:hover {
+    animation: tilt-shaking 0.55s infinite;
 }
 
 .searchbar-picture img {
@@ -263,6 +281,15 @@ img {
     background-color: inherit;
     cursor: pointer;
     display: inline-block;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+.show:hover,
+.share:hover,
+.star:hover,
+.github:hover {
+    transform: scale(1.5);
 }
 
 .side-content-card {
@@ -334,7 +361,7 @@ img {
     background-color: #ffffff;
     border-radius: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -366,5 +393,27 @@ img {
     .trending-content-card {
         flex-direction: column;
         padding-left: 30px;
+    }
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
     }
 }
